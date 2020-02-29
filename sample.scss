@@ -1,0 +1,47 @@
+$smallDevice : 600px;
+$desktopDevice : 992px;
+
+@media only screen and(max-width : $smallDevice) {
+    body {
+        header {
+            nav {
+                i.ion-navicon-round {
+                    display: flex;
+                }
+
+                ul {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(min-width : $desktopDevice) {
+    body {
+        header {
+            background-color: green;
+            nav {
+                i.ion-navicon-round {
+                    display: none;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+}
+
+* {
+    list-style: none;
+}
+
+.displayCenterFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
